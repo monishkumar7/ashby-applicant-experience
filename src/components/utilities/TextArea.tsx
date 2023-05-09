@@ -1,13 +1,13 @@
 import { useField } from 'formik';
 
-type TextInputProps = {
+type TextAreaProps = {
   label: string;
   name: string;
   type: string;
   placeholder: string;
 };
 
-export default function FormTextArea({ label, ...props }: TextInputProps) {
+export default function FormTextArea({ label, ...props }: TextAreaProps) {
   const [field, meta] = useField(props);
   return (
     <div className="flex flex-col space-y-1">

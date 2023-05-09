@@ -13,6 +13,7 @@ export default function JobDescription() {
       .then((response) => response.text())
       .then((text) => setJobDescriptionText(text));
   }, []);
+
   return (
     <Layout>
       <JobDetailsMobile />

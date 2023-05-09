@@ -1,16 +1,12 @@
 import { useField } from 'formik';
 
-type TextInputProps = {
+type RadioProps = {
   label: string;
   name: string;
   options: string[];
 };
 
-export default function FormYesNo({
-  label,
-  options,
-  ...props
-}: TextInputProps) {
+export default function FormYesNo({ label, options, ...props }: RadioProps) {
   const [field, meta] = useField(props);
   return (
     <div className="flex flex-col space-y-1">

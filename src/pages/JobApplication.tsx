@@ -7,6 +7,7 @@ import TextInput from '../components/utilities/TextInput';
 import TextArea from '../components/utilities/TextArea';
 import YesNo from '../components/utilities/YesNo';
 import USEqualEmployment from '../components/USEqualEmployment';
+import FileUpload from '../components/utilities/FileUpload';
 
 export default function JobApplication() {
   return (
@@ -33,7 +34,8 @@ export default function JobApplication() {
           designSystem: '',
           gender: '',
           race: '',
-          veteran: ''
+          veteran: '',
+          resume: ''
         }}
         validationSchema={Yup.object({
           name: Yup.string()
@@ -61,6 +63,12 @@ export default function JobApplication() {
             type="email"
             placeholder="johndoe@gmail.com"
           />
+          <FileUpload
+            label="Resume"
+            buttonText="Upload Resume (docx or pdf)"
+            type="file"
+            name="resume"
+          />
           <h4 className="sub-section-header">Profile & Links</h4>
           <TextInput
             label="LinkedIn Profile Link"
@@ -79,7 +87,7 @@ export default function JobApplication() {
             label="What is most important to you in your next role?"
             name="question"
             type="text"
-            placeholder="linkedin.com/johndoe"
+            placeholder="Impact"
           />
           <YesNo
             question="Are you able to work in North America or EU timezones?"

@@ -1,6 +1,6 @@
 import { useField } from 'formik';
 
-type TextInputProps = {
+type YesNoProps = {
   question: string;
   questionDetails: string;
   name: string;
@@ -10,7 +10,7 @@ export default function FormYesNo({
   question,
   questionDetails,
   ...props
-}: TextInputProps) {
+}: YesNoProps) {
   const [field, meta] = useField(props);
   return (
     <div className="flex flex-col space-y-1">
