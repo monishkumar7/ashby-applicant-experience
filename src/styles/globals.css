@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .css-debug {
+    @apply border-red-700 border-2 !important;
+  }
+
+  .section-header {
+    @apply uppercase text-sm text-gray-500 font-bold;
+  }
+
+  .sub-section-header {
+    @apply font-bold text-gray-800;
+  }
+
+  .radio-button {
+    @apply inline-flex justify-center py-1 w-full text-gray-500 bg-white rounded border-[0.5px] border-ashby-100 cursor-pointer peer-checked:border-ashby-700 peer-checked:text-ashby-700 peer-checked:font-medium peer-checked:bg-ashby-100 hover:text-gray-700 hover:bg-ashby-100;
+  }
+}
