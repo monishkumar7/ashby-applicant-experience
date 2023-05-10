@@ -3,4 +3,5 @@ export type JobListingProps = {
   salary: string;
   type: string;
   location: string;
+  department: string;
 };

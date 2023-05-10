@@ -3,15 +3,17 @@ import { useState } from 'react';
 type DropdownSelectorProps = {
   label: string;
   elements: string[];
+  defaultSelected: string;
   onValueChange: (value: string) => void;
 };
 
 export default function DropdownSelector({
   label,
   elements,
+  defaultSelected,
   onValueChange
 }: DropdownSelectorProps) {
-  const [selected, setSelected] = useState('');
+  const [selected, setSelected] = useState(defaultSelected);
 
   const handleSelected = (element: string) => {
     setSelected(element);

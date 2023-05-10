@@ -9,7 +9,6 @@ type FileUploadProps = {
 
 export default function FileUpload({ label, ...props }: FileUploadProps) {
   const [field, meta, helpers] = useField(props);
-  console.log('\field', field);
   return (
     <div className="flex flex-col space-y-1">
       <p className="text-sm font-semibold text-gray-500">{label}</p>
