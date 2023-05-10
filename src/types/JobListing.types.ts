@@ -1,4 +1,5 @@
 export type JobListingProps = {
+  slug: string;
   title: string;
   salary: string;
   type: string;
