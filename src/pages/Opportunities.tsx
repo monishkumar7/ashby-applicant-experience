@@ -35,8 +35,9 @@ export default function Opportunities() {
   console.log('\nlocation', location);
   return (
     <Layout>
-      <div>Find Your Perfect Role</div>
-      <div>
+      <div className="flex flex-col space-y-4">
+        <p>Find Your Perfect Role</p>
+
         <DropdownSelector
           label="Department"
           elements={departments}
@@ -49,8 +50,8 @@ export default function Opportunities() {
           defaultSelected={location}
           onValueChange={handleLocation}
         />
-        <div className="flex justify-between">
-          <p>
+        <div className="flex justify-between items-baseline">
+          <p className="mt-12">
             Showing{' '}
             {location === 'All' && department === 'All' ? (
               <span>All Opportunities</span>
@@ -75,7 +76,15 @@ export default function Opportunities() {
             </span>
           </p>
 
-          <button onClick={clearFilters}>Clear Filters</button>
+          <button
+            className={`rounded bg-gray-500 px-4 text-white py-1 ${
+              department === 'All' && location === 'All' ? 'opacity-40' : ''
+            }`}
+            disabled={department === 'All' && location === 'All' ? true : false}
+            onClick={clearFilters}
+          >
+            Clear Filters
+          </button>
         </div>
         <div className="flex flex-col space-y-4 py-4">
           {filteredJobListings && filteredJobListings.length ? (
@@ -90,7 +99,9 @@ export default function Opportunities() {
               />
             ))
           ) : (
-            <p>No matches</p>
+            <p className="text-gray-500 text-sm text-center mt-8">
+              No matching jobs found
+            </p>
           )}
         </div>
       </div>

@@ -22,7 +22,7 @@ export default function DropdownSelector({
 
   return (
     <div>
-      <p>{label}</p>
+      <p className="section-header mb-1">{label}</p>
       <div className="flex space-x-4 whitespace-nowrap overflow-x-auto max-w-full">
         {elements.map((element) => (
           <div onClick={() => handleSelected(element)}>

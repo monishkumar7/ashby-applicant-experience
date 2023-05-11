@@ -7,7 +7,7 @@ export default function JobDetailsMobile({
   location
 }: JobListingProps) {
   return (
-    <div className="flex flex-col py-4 space-y-2">
+    <div className="flex flex-col py-8 space-y-2">
       <p className="font-bold text-2xl">{title}</p>
       <p className="font-medium text-sm">{salary}</p>
       <p className="flex justify-between text-gray-500">

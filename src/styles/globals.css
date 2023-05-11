@@ -12,7 +12,7 @@
   }
 
   .sub-section-header {
-    @apply font-bold text-gray-800;
+    @apply font-semibold;
   }
 
   .radio-common {

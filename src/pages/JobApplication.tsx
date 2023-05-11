@@ -29,7 +29,7 @@ export default function JobApplication() {
         type={jobDetails?.type}
         location={jobDetails?.location}
       />
-      <div className="flex">
+      <div className="flex mb-16">
         <Link
           className="p-1 rounded text-center bg-ashby-100 border-[0.5px] border-ashby-700 text-ashby-700 w-full"
           to={`/opportunity/${jobDetails.slug}`}
@@ -37,7 +37,7 @@ export default function JobApplication() {
           View Job Description
         </Link>
       </div>
-      <h3 className="section-header">Job Application</h3>
+      <h3 className="section-header my-4">Job Application</h3>
       <Formik
         initialValues={{
           name: '',
@@ -66,61 +66,67 @@ export default function JobApplication() {
           setFormSubmitted(true);
         }}
       >
-        <Form className="flex flex-col">
-          <h4 className="sub-section-header">Applicant Details</h4>
-          <TextInput
-            label="Full Name"
-            name="name"
-            type="text"
-            placeholder="John Doe"
-          />
-          <TextInput
-            label="Email Address"
-            name="email"
-            type="email"
-            placeholder="johndoe@gmail.com"
-          />
-          <FileUpload
-            label="Resume"
-            buttonText="Upload Resume (docx or pdf)"
-            type="file"
-            name="resume"
-          />
-          <h4 className="sub-section-header">Profile & Links</h4>
-          <TextInput
-            label="LinkedIn Profile Link"
-            name="linkedin"
-            type="text"
-            placeholder="linkedin.com/johndoe"
-          />
-          <TextInput
-            label="Github Profile Link"
-            name="github"
-            type="text"
-            placeholder="github.com/johndoe"
-          />
-          <h4 className="sub-section-header">Questions</h4>
-          <TextArea
-            label="What is most important to you in your next role?"
-            name="question"
-            type="text"
-            placeholder="Impact"
-          />
-          <YesNo
-            question="Are you able to work in North America or EU timezones?"
-            questionDetails={`If you live in the Asian-Pacific region, we will reject your application even if you believe you can work in these timezones. We don't believe it's sustainable even with async communication.`}
-            name="timezone"
-          />
-          <YesNo
-            question="Do you have 8+ years of experience as a full-time frontend engineer?"
-            questionDetails={`We'll also consider folks who have 4+ years and spent the other 4+ years as a product designer.`}
-            name="experience"
-          />
-          <YesNo
-            question="Have you made major contributions to a design system?"
-            questionDetails={`Either as a designer or frontend engineer.`}
-            name="designSystem"
-          />
+        <Form className="flex flex-col space-y-8">
+          <div className="flex flex-col space-y-4">
+            <h4 className="sub-section-header">Applicant Details</h4>
+            <TextInput
+              label="Full Name"
+              name="name"
+              type="text"
+              placeholder="John Doe"
+            />
+            <TextInput
+              label="Email Address"
+              name="email"
+              type="email"
+              placeholder="johndoe@gmail.com"
+            />
+            <FileUpload
+              label="Resume"
+              buttonText="Upload Resume (docx or pdf)"
+              type="file"
+              name="resume"
+            />
+          </div>
+          <div className="flex flex-col space-y-4">
+            <h4 className="sub-section-header">Profile & Links</h4>
+            <TextInput
+              label="LinkedIn Profile Link"
+              name="linkedin"
+              type="text"
+              placeholder="linkedin.com/johndoe"
+            />
+            <TextInput
+              label="Github Profile Link"
+              name="github"
+              type="text"
+              placeholder="github.com/johndoe"
+            />
+          </div>
+          <div className="flex flex-col space-y-4">
+            <h4 className="sub-section-header">Questions</h4>
+            <TextArea
+              label="What is most important to you in your next role?"
+              name="question"
+              type="text"
+              placeholder="Impact"
+            />
+            <YesNo
+              question="Are you able to work in North America or EU timezones?"
+              questionDetails={`If you live in the Asian-Pacific region, we will reject your application even if you believe you can work in these timezones. We don't believe it's sustainable even with async communication.`}
+              name="timezone"
+            />
+            <YesNo
+              question="Do you have 8+ years of experience as a full-time frontend engineer?"
+              questionDetails={`We'll also consider folks who have 4+ years and spent the other 4+ years as a product designer.`}
+              name="experience"
+            />
+            <YesNo
+              question="Have you made major contributions to a design system?"
+              questionDetails={`Either as a designer or frontend engineer.`}
+              name="designSystem"
+            />
+          </div>
           <USEqualEmployment />
           <button
             className="w-full text-center rounded bg-ashby-700 text-white font-semibold py-1"

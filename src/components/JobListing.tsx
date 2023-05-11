@@ -10,7 +10,7 @@ export default function JobListing({
 }: JobListingProps) {
   return (
     <Link to={`opportunity/${slug}`}>
-      <div className="border border-ashby-700 flex flex-col p-4 rounded text-gray-700 space-y-2 bg-white">
+      <div className="border border-ashby-100 flex flex-col p-4 rounded text-gray-700 space-y-2 bg-white">
         <h2 className="font-bold">{title}</h2>
         <p className="text-sm">{salary}</p>
         <div className="flex justify-between text-gray-500 text-sm">
