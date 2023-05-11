@@ -41,13 +41,13 @@ export default function Opportunities() {
         <DropdownSelector
           label="Department"
           elements={departments}
-          defaultSelected={department}
+          preSelected={department}
           onValueChange={handleDepartment}
         />
         <DropdownSelector
           label="Location"
           elements={locations}
-          defaultSelected={location}
+          preSelected={location}
           onValueChange={handleLocation}
         />
         <div className="flex justify-between items-baseline">

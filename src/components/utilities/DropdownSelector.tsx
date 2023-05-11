@@ -1,22 +1,26 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 
 type DropdownSelectorProps = {
   label: string;
   elements: string[];
-  defaultSelected: string;
+  preSelected: string;
   onValueChange: (value: string) => void;
 };
 
 export default function DropdownSelector({
   label,
   elements,
-  defaultSelected,
+  preSelected,
   onValueChange
 }: DropdownSelectorProps) {
-  const [selected, setSelected] = useState(defaultSelected);
+  const [userSelected, setUserSelected] = useState(preSelected);
+
+  useEffect(() => {
+    setUserSelected(preSelected);
+  }, [preSelected]);
 
   const handleSelected = (element: string) => {
-    setSelected(element);
+    setUserSelected(element);
     onValueChange(element);
   };
 
@@ -26,7 +30,7 @@ export default function DropdownSelector({
       <div className="flex space-x-4 whitespace-nowrap overflow-x-auto max-w-full">
         {elements.map((element) => (
           <div onClick={() => handleSelected(element)}>
-            {selected === element ? (
+            {userSelected === element ? (
               <p className="rounded-xl bg-ashby-700 text-white text-center px-4">
                 {element}
               </p>
