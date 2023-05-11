@@ -1,6 +1,7 @@
+import { useState } from 'react';
 import { Formik, Form } from 'formik';
 import * as Yup from 'yup';
-import { Link, useParams } from 'react-router-dom';
+import { Link, Navigate, useLocation } from 'react-router-dom';
 
 import JobDetailsMobile from '../components/JobDetailsMobile';
 import Layout from '../components/layout/Layout';
@@ -11,15 +12,27 @@ import USEqualEmployment from '../components/USEqualEmployment';
 import FileUpload from '../components/utilities/FileUpload';
 
 export default function JobApplication() {
-  const { name } = useParams();
+  const [formSubmitted, setFormSubmitted] = useState(false);
+  const location = useLocation();
+  const jobDetails = location.state.jobDetails;
+
+  if (formSubmitted)
+    return (
+      <Navigate to={`/opportunity/${jobDetails.slug}/application/success`} />
+    );
 
   return (
     <Layout>
-      <JobDetailsMobile />
+      <JobDetailsMobile
+        title={jobDetails?.title}
+        salary={jobDetails?.salary}
+        type={jobDetails?.type}
+        location={jobDetails?.location}
+      />
       <div className="flex">
         <Link
           className="p-1 rounded text-center bg-ashby-100 border-[0.5px] border-ashby-700 text-ashby-700 w-full"
-          to={`/opportunity/${name}`}
+          to={`/opportunity/${jobDetails.slug}`}
         >
           View Job Description
         </Link>
@@ -50,6 +63,7 @@ export default function JobApplication() {
         })}
         onSubmit={(values) => {
           console.log('Submitting', values);
+          setFormSubmitted(true);
         }}
       >
         <Form className="flex flex-col">
