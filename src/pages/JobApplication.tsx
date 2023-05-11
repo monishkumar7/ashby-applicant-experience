@@ -1,5 +1,6 @@
 import { Formik, Form } from 'formik';
 import * as Yup from 'yup';
+import { Link, useParams } from 'react-router-dom';
 
 import JobDetailsMobile from '../components/JobDetailsMobile';
 import Layout from '../components/layout/Layout';
@@ -10,16 +11,18 @@ import USEqualEmployment from '../components/USEqualEmployment';
 import FileUpload from '../components/utilities/FileUpload';
 
 export default function JobApplication() {
+  const { name } = useParams();
+
   return (
     <Layout>
       <JobDetailsMobile />
       <div className="flex">
-        <a
+        <Link
           className="p-1 rounded text-center bg-ashby-100 border-[0.5px] border-ashby-700 text-ashby-700 w-full"
-          href="/jobdescription"
+          to={`/opportunity/${name}`}
         >
           View Job Description
-        </a>
+        </Link>
       </div>
       <h3 className="section-header">Job Application</h3>
       <Formik

@@ -6,6 +6,7 @@ import './styles/globals.css';
 import PageNotFound from './components/layout/PageNotFound';
 import JobDescription from './pages/JobDescription';
 import Opportunities from './pages/Opportunities';
+import JobApplication from './pages/JobApplication';
 
 const router = createBrowserRouter([
   {
@@ -14,8 +15,12 @@ const router = createBrowserRouter([
     errorElement: <PageNotFound />
   },
   {
-    path: 'opportunity/:opportunityName',
+    path: 'opportunity/:name',
     element: <JobDescription />
+  },
+  {
+    path: 'opportunity/:name/application',
+    element: <JobApplication />
   }
 ]);
 
