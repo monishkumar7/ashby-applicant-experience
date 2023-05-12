@@ -37,7 +37,7 @@ export default function JobApplication() {
           View Job Description
         </Link>
       </div>
-      <h3 className="section-header my-4">Job Application</h3>
+      <h3 className="section-header my-8">Job Application</h3>
       <Formik
         initialValues={{
           name: '',

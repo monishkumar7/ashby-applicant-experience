@@ -27,9 +27,9 @@ export default function DropdownSelector({
   return (
     <div>
       <p className="section-header mb-1">{label}</p>
-      <div className="flex space-x-4 whitespace-nowrap overflow-x-auto max-w-full">
+      <div className="flex space-x-4 whitespace-nowrap overflow-x-auto">
         {elements.map((element) => (
-          <div onClick={() => handleSelected(element)}>
+          <div onClick={() => handleSelected(element)} className="max-w-full">
             {userSelected === element ? (
               <p className="rounded-xl bg-ashby-700 text-white text-center px-4">
                 {element}
