@@ -35,7 +35,7 @@ export default function Opportunities() {
   console.log('\nlocation', location);
   return (
     <Layout>
-      <div className="flex flex-col space-y-4">
+      <div className="flex flex-col space-y-8">
         <p>Find Your Perfect Role</p>
         <DropdownSelector
           label="Department"
@@ -100,7 +100,19 @@ export default function Opportunities() {
           ))
         ) : (
           <p className="text-gray-500 text-sm text-center mt-8">
-            No matching jobs found
+            No matching jobs found. <br /> Try clearing the filters. <br />
+            <br />
+            <button
+              className={` min-w-fit rounded bg-gray-500 px-4 text-white py-1 ${
+                department === 'All' && location === 'All' ? 'opacity-40' : ''
+              }`}
+              disabled={
+                department === 'All' && location === 'All' ? true : false
+              }
+              onClick={clearFilters}
+            >
+              Clear Filters
+            </button>
           </p>
         )}
       </div>

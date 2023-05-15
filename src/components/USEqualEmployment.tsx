@@ -49,10 +49,7 @@ export default function USEqualEmployment() {
         (Compleition is voluntary and will not subject you to adverse treatment)
       </h4>
       <div className="flex flex-col space-y-4">
-        <ReactMarkdown
-          className="prose text-gray-500"
-          children={selfVolunteerText}
-        />
+        <ReactMarkdown className="prose-text" children={selfVolunteerText} />
         <Radio
           label="Please select your Gender"
           name="gender"
@@ -60,7 +57,7 @@ export default function USEqualEmployment() {
         />
       </div>
       <div className="flex flex-col space-y-4">
-        <ReactMarkdown className="prose text-gray-500" children={raceText} />
+        <ReactMarkdown className="prose-text" children={raceText} />
         <Radio
           label="Please select your Race"
           name="race"
@@ -68,7 +65,7 @@ export default function USEqualEmployment() {
         />
       </div>
       <div className="flex flex-col space-y-4">
-        <ReactMarkdown className="prose text-gray-500" children={veteranText} />
+        <ReactMarkdown className="prose-text" children={veteranText} />
         <Radio
           label="Please select your Veteran Status"
           name="veteran"

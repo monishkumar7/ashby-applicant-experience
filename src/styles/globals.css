@@ -26,4 +26,12 @@
   .radio-group {
     @apply px-2 radio-common;
   }
+
+  .prose-text {
+    @apply prose text-gray-500 prose-strong:text-gray-600 prose-strong:font-medium;
+  }
+
+  .prose-description {
+    @apply prose text-gray-700 prose-strong:text-gray-800 prose-strong:font-semibold prose-a:text-ashby-700 prose-a:font-medium;
+  }
 }

@@ -27,8 +27,11 @@ export default function JobDescription() {
         location={jobDetails?.location}
       />
       <h2 className="section-header my-4">Job Description</h2>
-      <ReactMarkdown className="prose" children={jobDescriptionText} />
-      <Link to={`/opportunity/${name}/application`} state={{ jobDetails }}>
+      <ReactMarkdown
+        className="prose-description"
+        children={jobDescriptionText}
+      />
+      <Link to={`/opportunity/${name}/application/`} state={{ jobDetails }}>
         <button className="bg-ashby-700 text-white w-full py-1 rounded mt-8">
           Apply for this Job
         </button>

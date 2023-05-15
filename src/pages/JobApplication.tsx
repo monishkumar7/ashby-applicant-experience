@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { Formik, Form } from 'formik';
 import * as Yup from 'yup';
 import { Link, Navigate, useLocation } from 'react-router-dom';
@@ -15,6 +15,10 @@ export default function JobApplication() {
   const [formSubmitted, setFormSubmitted] = useState(false);
   const location = useLocation();
   const jobDetails = location.state.jobDetails;
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   if (formSubmitted)
     return (

@@ -1,4 +1,4 @@
-Hi 👋🏾 I’m Abhik, the Co-Founder and Head of Engineering at Ashby. As a person who could design and build software, this is a position close to my heart. I always felt I had a unique perspective because I could play with design ideas and iterate in code. My ideas could start in Figma but then be grounded (or sometimes more creative) in code. My prototypes used actual logic and data. My changes cascaded throughout the app for comprehensive critique (thanks, React component system!). But, every company made me pick one —I couldn’t design and build. At Ashby, you can.
+Hi 👋🏾 I’m [Abhik](https://www.linkedin.com/in/abhikpramanik/), the Co-Founder and Head of Engineering at Ashby. As a person who could design and build software, this is a position close to my heart. I always felt I had a unique perspective because I could play with design ideas and iterate in code. My ideas could start in Figma but then be grounded (or sometimes more creative) in code. My prototypes used actual logic and data. My changes cascaded throughout the app for comprehensive critique (thanks, React component system!). But, every company made me pick one —I couldn’t design and build. At Ashby, you can.
 
 While every engineer can design and build, you’ll tackle our most challenging design problems and help others improve their designs by expanding and enhancing our in-house design system and consulting on bespoke work. To ground it with examples, engineers who can design at Ashby have:
 
@@ -12,13 +12,16 @@ We have many customers, great revenue growth, years of runway, and amazing inves
 
 **One formality, we do require at least 8 years of experience as a full-time frontend engineer or evenly split between frontend and design for this role.**
 
-**Engineering Culture**
-Our engineering culture is motivated by Benji’s (my co-founder and CEO) and my belief that a small talented team, given the right environment, can build high-quality software fast (and work regular hours!).
+### Engineering Culture
 
-**Collaboration is Natural & Communication is Deliberate**
-Our engineering team (and the team at large) consists of lifelong learners who are humble and kind (meet them here!). These attributes create an environment where collaboration happens naturally (we filter for it in interviews). We combine this with research, prototyping, and written proposals to see around corners and get feedback from the team across time zones. Focus time is something that we hold sacred, and, with thoughtful and deliberate communication, engineers can focus 36h out of a 40h work week (I wrote about it here).
+Our engineering culture is motivated by [Benji](https://www.linkedin.com/in/benjaminencz/)’s (my co-founder and CEO) and my belief that a small talented team, given the right environment, can build high-quality software fast (and work regular hours!).
 
-**Increase Leverage, not Team Size**
+#### Collaboration is Natural & Communication is Deliberate
+
+Our engineering team (and the team at large) consists of lifelong learners who are humble and kind (meet them [here](https://www.ashbyhq.com/team)!. These attributes create an environment where collaboration happens naturally (we filter for it in interviews). We combine this with research, prototyping, and written proposals to see around corners and get feedback from the team across time zones. Focus time is something that we hold sacred, and, with thoughtful and deliberate communication, engineers can focus 36h out of a 40h work week (I wrote about it [here](https://www.ashbyhq.com/blog/company/thoughtful-communication)).
+
+#### Increase Leverage, not Team Size
+
 We built Ashby with the quality, breadth, and depth that many customers would expect from much larger teams over larger time scales. We’ve done this through investment in:
 
 - **Great developer tooling**. Our CI/CD takes ~10m, and we deploy at least 5x a day. Everyone on the team has contributed to developer experience 💪🏾
@@ -26,14 +29,19 @@ We built Ashby with the quality, breadth, and depth that many customers would ex
 
 Here’s an impromptu quote from Arjun in our company Slack of what it’s like to build a feature at Ashby:
 
-**Give Engineers Ownership & Autonomy**
+And a demo of one of these building blocks:
+
+#### Give Engineers Ownership & Autonomy
+
 We, as engineers, find clever ways to solve problems, which amplifies when we deeply understand the problem. Benji and I did our best work as engineers when we had a deep understanding of the end-user and the business and ownership over the solution. Our engineering culture reflects this experience: engineers own projects end-to-end, from speaking with users to writing product specs to UX design. These are skills that we often don’t get to practice as engineers, and, at Ashby, we provide mentorship to grow them and help from the team where you want it.
 
-**Put Effort into Diversity**
-Diverse teams drive innovation and better outcomes. Having seen my mother and partner build their careers as minority women in non-diverse fields, I want to make sure Ashby creates opportunities for the next generation of engineers from underrepresented groups.
+#### Put Effort into Diversity
+
+Diverse teams [drive innovation and better outcomes](https://hbr.org/2016/11/why-diverse-teams-are-smarter). Having seen my mother and partner build their careers as minority women in non-diverse fields, I want to make sure Ashby creates opportunities for the next generation of engineers from underrepresented groups.
 Today, 26% of engineers at Ashby are from underrepresented groups. It’s not great, and we are taking conscious steps to improve, like sourcing diverse candidates, providing generous paid family leave, no leetcode interviews, and more.
 
-**Interview Process**
+### Interview Process
+
 At Ashby, our team and interview process want to help you show your best self. We’ll dive into past projects and simulate working together via pair programming, writing tech specs collaboratively, and talking through decisions (no leetcode or whiteboard exercises). Our interview process is three rounds:
 
 1. 30-minute introduction call (we demo Ashby!)
@@ -41,19 +49,20 @@ At Ashby, our team and interview process want to help you show your best self. W
 3. A virtual on-site of 3 hours and 30 minutes (can be split across two days)
    Your hiring manager will be your main point of contact and prep you for interviews. You’ll meet my co-founder and CEO plus 4 to 6 people in engineering (with 15 minutes in each interview to ask them questions). If we don’t give an offer, we’ll provide feedback!
 
-**Your First Two Months at Ashby**
-We want an exceptional onboarding experience for every new hire. At Ashby, your dev environment sets up with a single script, you push your first change on day one, and we spend the rest of the time building your confidence in our codebase and practices culminating in the delivery of a prominent, impactful feature. We’ll pair you with a peer who’ll guide you through your first tasks and be someone you rely on, from answering questions to pair programming.
-![Alt Text](https://plus.unsplash.com/premium_photo-1664529109553-70ae8150962d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwyfHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=800&q=60)
+### Your First Two Months at Ashby
 
-**Technology Stack**
+We want an exceptional onboarding experience for every new hire. At Ashby, your dev environment sets up with a single script, you push your first change on day one, and we spend the rest of the time building your confidence in our codebase and practices culminating in the delivery of a prominent, impactful feature. We’ll pair you with a peer who’ll guide you through your first tasks and be someone you rely on, from answering questions to pair programming.
+
+### Technology Stack
+
 I’m sharing our tech stack with the caveat that we don’t require previous experience in it (but a love of typed languages is helpful 😀): TypeScript (frontend & backend), SCSS modules, Stitches (mobile), React, Apollo GraphQL, Node.js, Postgres, Redis.
 
-**Benefits**
+### Benefits
 
 - Competitive salary and equity.
-- 10-year exercise window for stock options. You shouldn’t feel pressure to purchase stock options if you leave Ashby —do it when you feel financially comfortable.
+- _10-year exercise window for stock options_. You shouldn’t feel pressure to purchase stock options if you leave Ashby —do it when you feel financially comfortable.
 - Unlimited PTO with four weeks recommended per year. Expect “Vacation?” in our one-on-one agenda until you start taking it 😅.
-- Twelve weeks of fully paid family leave in the US. We plan to expand this to employees in other countries as situations arise.
+- _Twelve weeks of fully paid family leave in the US_. We plan to expand this to employees in other countries as situations arise.
 - Generous equipment, software, and office furniture budget. Get what you need to be happy and productive!
 - $100/month education budget with more expensive items (like conferences) covered with manager approval.
 - If you’re in the US, top-notch health insurance for you and your dependents with all premiums covered by us.
