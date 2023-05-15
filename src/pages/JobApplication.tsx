@@ -66,7 +66,7 @@ export default function JobApplication() {
           setFormSubmitted(true);
         }}
       >
-        <Form className="flex flex-col space-y-8">
+        <Form className="flex flex-col space-y-16">
           <div className="flex flex-col space-y-4">
             <h4 className="sub-section-header">Applicant Details</h4>
             <TextInput

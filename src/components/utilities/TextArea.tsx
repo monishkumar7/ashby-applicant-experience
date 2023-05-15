@@ -18,7 +18,7 @@ export default function FormTextArea({ label, ...props }: TextAreaProps) {
         {label}
       </label>
       <textarea
-        className="rounded border-[0.5px] border-ashby-100 px-2 py-1 resize-none h-24"
+        className="rounded border-[0.5px] border-ashby-100 px-2 py-1 resize-none h-24 outline-ashby-700 "
         {...field}
         {...props}
       />

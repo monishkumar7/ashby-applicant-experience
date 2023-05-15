@@ -18,7 +18,7 @@ export default function FormTextInput({ label, ...props }: TextInputProps) {
         {label}
       </label>
       <input
-        className="rounded border-[0.5px] border-ashby-100 px-2 py-1"
+        className="rounded border-[0.5px] border-ashby-100 px-2 py-1 outline-ashby-700 "
         {...field}
         {...props}
       />

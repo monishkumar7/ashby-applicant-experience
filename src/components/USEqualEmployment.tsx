@@ -42,11 +42,11 @@ export default function USEqualEmployment() {
 
   return (
     <div className="flex flex-col space-y-8">
-      <h4 className="text-gray-700 mt-8">
+      <h4 className="text-gray-700 mt-8 -mb-8">
         <span className="uppercase">
           U.S. Equal Employment Opportunity Information
         </span>{' '}
-        (Compleition is voluntary and will not subject you to adverse treatment)
+        (Completion is voluntary and will not subject you to adverse treatment)
       </h4>
       <div className="flex flex-col space-y-4">
         <ReactMarkdown className="prose-text" children={selfVolunteerText} />
