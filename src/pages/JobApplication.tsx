@@ -58,12 +58,8 @@ export default function JobApplication() {
           resume: ''
         }}
         validationSchema={Yup.object({
-          name: Yup.string()
-            .max(25, 'Must be 25 characters or less')
-            .required('Required'),
-          email: Yup.string()
-            .email('Please enter a valid email address')
-            .required('Required')
+          name: Yup.string().max(25, 'Must be 25 characters or less'),
+          email: Yup.string().email('Please enter a valid email address')
         })}
         onSubmit={(values) => {
           console.log('Submitting', values);
