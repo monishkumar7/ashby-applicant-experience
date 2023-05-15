@@ -28,8 +28,11 @@ We built Ashby with the quality, breadth, and depth that many customers would ex
 - **Building blocks to create powerful and customizable products fast**. At the core of Ashby is a set of common components (analytics modeling and query language, policy engine, workflow engine, design system) which we are constantly improving. Each improvement to a common component cascades throughout our app (short video below).
 
 Here’s an impromptu quote from Arjun in our company Slack of what it’s like to build a feature at Ashby:
+![Slack message](https://app.ashbyhq.com/api/images/user-content/4ea5f68e-c33e-4ac9-831a-e732bee4a303/40361ea1-5cdf-48c5-a550-e6f877838c56/arjun.png)
 
 And a demo of one of these building blocks:
+
+<iframe width="100%" height="320" src="https://www.loom.com/embed/32c0cc3eedf2450fb66a901b76186ce4" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen> </iframe>
 
 #### Give Engineers Ownership & Autonomy
 

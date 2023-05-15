@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import ReactMarkdown from 'react-markdown';
 import { Link, useParams } from 'react-router-dom';
+import rehypeRaw from 'rehype-raw';
 
 import { jobListings } from '../data/jobListings';
 import JobDetailsMobile from '../components/JobDetailsMobile';
@@ -28,6 +29,7 @@ export default function JobDescription() {
       />
       <h2 className="section-header my-4">Job Description</h2>
       <ReactMarkdown
+        rehypePlugins={[rehypeRaw]}
         className="prose-description"
         children={jobDescriptionText}
       />
